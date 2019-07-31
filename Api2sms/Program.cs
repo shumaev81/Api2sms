@@ -29,12 +29,12 @@ namespace Api2sms
 				string nmbr = args[1];
 				if (args[1] == "-balance")              //Если второй параметр -balance
 				{
-					urlResponse = "https://sms.ru/my/balance?api_id=" + API + "&json=1";
+					urlResponse = "https://sms.ru/my/balance?api_id=" + API + "&json=1&partner_id=96288";
                 }
 				else									//иначе собираем строку запроса
 				{
 					string msg = args[2];
-					urlResponse = "https://sms.ru/sms/send?api_id=" + API + "&to=" + nmbr + "&msg=" + msg + "&json=1";
+					urlResponse = "https://sms.ru/sms/send?api_id=" + API + "&to=" + nmbr + "&msg=" + msg + "&json=1&partner_id=96288";
                 }
                 //отправка HTTP-запроса
                 WebRequest request = WebRequest.Create(urlResponse);
