@@ -29,7 +29,7 @@ namespace Api2sms
 				string nmbr = args[1];
 				if (args[1] == "-balance")              //Если второй параметр -balance
 				{
-					urlResponse = "https://sms.ru/my/balance?api_id=" + API + "&json=1&partner_id=96288";
+					urlResponse = "https://sms.ru/my/balance?api_id=" + API + "&json=1";
                 }
 				else									//иначе собираем строку запроса
 				{
